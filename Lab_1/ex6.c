@@ -1,3 +1,9 @@
+/*  Feito por: Henrique Alves Pocinho
+                    IST199952
+                    
+6. Escreva um programa para ler o número de um mês e que imprima de seguida o número de dias para este mês.
+Utilize o switch/case.  */
+
 #include <stdio.h>
 
 int m, cs, ano;
