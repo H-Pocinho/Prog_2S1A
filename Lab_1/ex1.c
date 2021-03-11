@@ -1,12 +1,14 @@
 /*  Feito por: Henrique Alves Pocinho
                     IST199952
-    Converte segundos para  horas e minutos*/
+
+1. Escreva um programa que receba o número de total de segundos como um inteiro e imprima o número total de
+horas, minutos e segundos correspondente. Não utilize quaisquer condições ou ciclos. */
 
 #include <stdio.h>
 
 int s,m=0,h=0;
 
-void main(){
+int main(){
     printf("Introduza o numero de segundos:\n");
     scanf("%d", &s);
     h=s/3600;
@@ -14,4 +16,5 @@ void main(){
     m=s/60;
     s-=60*m;
     printf("%d horas %d minutos %d segundos \n", h, m,s);
-};
+    return 0;
+}

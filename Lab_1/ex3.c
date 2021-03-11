@@ -1,6 +1,7 @@
 /*  Feito por: Henrique Alves Pocinho
                     IST199952
-    Recebe como parâmetros o ângulo de partida,em graus, velocidade inicial  e altura do teto, indica a que
+
+3. Recebe como parâmetros o ângulo de partida,em graus, velocidade inicial  e altura do teto, indica a que
 distância deve estar o centro do cesto e imprime uma mensagem a indicar se o projétil bate ou não no teto.  */
 
 #include <stdio.h>

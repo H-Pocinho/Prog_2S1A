@@ -1,6 +1,9 @@
 /*  Feito por: Henrique Alves Pocinho
                     IST199952
-    Calcula a diferença entre dois tempos */
+                    
+2. Escreva um programa que leia dois tempos, cada um especificado em horas (0-23), minutos (0-59) e (0-59)
+segundos; sendo o primeiro tempo maior do que o segundo, determine a diferença entre eles e escreve-a, também,
+em horas, minutos e segundos.*/
 
 #include <stdio.h>
 

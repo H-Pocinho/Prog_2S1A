@@ -1,6 +1,7 @@
 /*  Feito por: Henrique Alves Pocinho
                     IST199952
-     4. Escreva um programa para ler, separadamente, três caracteres correspondentes a dígitos decimais (algarismos)
+
+4. Escreva um programa para ler, separadamente, três caracteres correspondentes a dígitos decimais (algarismos)
 e escreva o dobro do número inteiro cujos algarismos são os caracteres lidos. */
 
 #include <stdio.h>
