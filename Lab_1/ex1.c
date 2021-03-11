@@ -5,12 +5,16 @@
 horas, minutos e segundos correspondente. Não utilize quaisquer condições ou ciclos. */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int s,m=0,h=0;
 
 int main(){
     printf("Introduza o numero de segundos:\n");
-    scanf("%d", &s);
+    if (scanf("%d", &s) != 1){
+        printf("Failled to read STDIN!\n");
+        exit(0);
+    }
     h=s/3600;
     s -=3600*h;
     m=s/60;

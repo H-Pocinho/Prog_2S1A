@@ -6,6 +6,7 @@ segundos; sendo o primeiro tempo maior do que o segundo, determine a diferença 
 em horas, minutos e segundos.*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #define ValHora(i) (((i>23) || (i<0)) ? 0 : 1)
 #define ValMS(i) (((i>59) || (i<0)) ? 0 : 1)
@@ -38,11 +39,22 @@ int IValores(int h, int m, int s){
         }
         s=60,m=60,h=60;    
         printf("Horas: ");
-        scanf("%d",&h);
+        if (scanf("%d",&h) != 1){
+            printf("Failled to read STDIN!\n");
+            exit(0);
+        }
+
         printf("Minutos: ");
-        scanf("%d",&m);
+        if (scanf("%d",&m) != 1){
+            printf("Failled to read STDIN!\n");
+            exit(0);
+        }
+
         printf("Segundos: ");
-        scanf("%d",&s);
+        if (scanf("%d",&s) != 1){
+            printf("Failled to read STDIN!\n");
+            exit(0);
+        }
     }while(ValHora(h)*ValMS(m)*ValMS(s)==0);
     s=3600*h+60*m+s;
     return s;

@@ -7,7 +7,7 @@ correspondente. Use a directiva #define. */
 
 #include <stdio.h>
 #include <math.h>
-
+#include <stdlib.h>
 
 #define radiowaves(i) ((i>=(3*pow(10,9))) ? 0 : 1)
 #define microwaves(i) (((i<(3*pow(10,9)))||(i>=(3*pow(10,12)))) ? 0 : 1)
@@ -21,7 +21,11 @@ float f;
 
 int main(){
     printf("Introduza uma frequencia:");
-    scanf("%f",&f);
+    
+    if(scanf("%f",&f) != 1){
+        printf("Failled to read STDIN!\n");
+        exit(0);
+    }
     if (radiowaves(f)==1){
         printf("E uma onda de radio\n");
     }

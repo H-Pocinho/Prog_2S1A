@@ -5,13 +5,17 @@
 Utilize o switch/case.  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int m, cs, ano;
 
 int main(){
     do{
         printf("Introduza um mes (numero entre 1 e 12): ");
-        scanf("%d",&m);
+        if (scanf("%d",&m) != 1){
+            printf("Failled to read STDIN!\n");
+            exit(0);
+        }
         if ( m<1 || m>12 ){
             printf("Numero invalido\n");
         }
@@ -34,7 +38,10 @@ int main(){
             break;
         case 2:
             printf("Introduza o ano: ");
-            scanf("%d", &ano);
+            if (scanf("%d", &ano)!=1){
+                printf("Failled to read STDIN!\n");
+                exit(0);
+            }
             if ((((ano%4 == 0) && (ano%100 != 0) ) || (ano%400 == 0))==1)
                 printf("O mes tem 29 dias\n");
             else

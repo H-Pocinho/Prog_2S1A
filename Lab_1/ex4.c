@@ -5,7 +5,8 @@
 e escreva o dobro do número inteiro cujos algarismos são os caracteres lidos. */
 
 #include <stdio.h>
- 
+#include <stdlib.h>
+
 int n[ 3 ] = {0,0,0}; 
 int i,totaln;
 
@@ -23,11 +24,18 @@ int main () {
 
 
 int intro(){
-    char n;
-    int x;
-    printf("Introduza um caracter entre 0 e 9:\n");
-    scanf(" %c",&n);
-    fflush(stdin);
-    x = n - '0';
+   char n;
+   int x;
+   do{
+      printf("Introduza um caracter entre 0 e 9:\n");
+      if(scanf("%c",&n) != 1){
+         printf("Failled to read STDIN!\n");
+         exit(0);
+      }
+      fflush(stdin);
+      x = n - '0';
+   } while (x<0||x>9);
+    
+
     return x;
 }

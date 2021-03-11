@@ -6,6 +6,7 @@ decimal, com n introduzido pelo utilizador (n assume valores entre 1 e 7). Reali
 funções de biblioteca do C e utilize o printf para produzir o mesmo valor. */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int n;
 
@@ -18,4 +19,9 @@ int main(){
         scanf("%d",&n);
     } while (n<1||n>7);
     
+
+{
+        printf("Failled to read STDIN!\n");
+        exit(0);
+    }
 }
