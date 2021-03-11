@@ -25,11 +25,9 @@ int main () {
 int intro(){
     char n;
     int x;
-    do{
-        printf("Introduza um caracter entre 0 e 9:\n");
-        scanf("%d",&n);
-        x = (int)n - 48;
-        if((n<0) || (n>9)) printf("Caracter invalido, introduza novamente\n");
-    } while ((n<0) || (n>9));
-    return n;
+    printf("Introduza um caracter entre 0 e 9:\n");
+    scanf(" %c",&n);
+    fflush(stdin);
+    x = n - '0';
+    return x;
 }
