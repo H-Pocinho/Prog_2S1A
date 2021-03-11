@@ -8,12 +8,12 @@ correspondente. Use a directiva #define. */
 #include <math.h>
 
 
-#define radiowaves(i) ((i>(3*pow(10,9))) ? 0 : 1)
-#define microwaves(i) (((i<=(3*pow(10,9)))||(i>(3*pow(10,12)))) ? 0 : 1)
-#define infrared(i) (((i<=(3*pow(10,12)))||(i>(4.3*pow(10,14)))) ? 0 : 1)
-#define visible(i) (((i<=(4.3*pow(10,14)))||(i>(7.5*pow(10,14)))) ? 0 : 1)
-#define ultraviolet(i) (((i<=(7.5*pow(10,14)))||(i>(3*pow(10,17)))) ? 0 : 1)
-#define xRays(i) (((i<=(3*pow(10,17)))||(i>(3*pow(10,19)))) ? 0 : 1)
+#define radiowaves(i) ((i>=(3*pow(10,9))) ? 0 : 1)
+#define microwaves(i) (((i<(3*pow(10,9)))||(i>=(3*pow(10,12)))) ? 0 : 1)
+#define infrared(i) (((i<(3*pow(10,12)))||(i>=(4.3*pow(10,14)))) ? 0 : 1)
+#define visible(i) (((i<(4.3*pow(10,14)))||(i>=(7.5*pow(10,14)))) ? 0 : 1)
+#define ultraviolet(i) (((i<(7.5*pow(10,14)))||(i>=(3*pow(10,17)))) ? 0 : 1)
+#define xRays(i) (((i<(3*pow(10,17)))||(i>=(3*pow(10,19)))) ? 0 : 1)
 
 
 float f;
