@@ -16,7 +16,7 @@ int size=0;
 char nM(char letra);
 
 int main(){
-    printf("Introuza os caracteres\n");
+    printf("Introduza os caracteres\n");
     if (scanf("%s", &linha) != 1){
         printf("Failled to read STDIN!\n");
         exit(0);
