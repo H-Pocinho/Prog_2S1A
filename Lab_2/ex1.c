@@ -1,3 +1,10 @@
+/*  Feito por: Henrique Alves Pocinho
+                    IST199952
+                    
+1. Desenvolva um programa que lê do teclado um número natural e imprime todos os divisores
+desse número e o respectivo valor médio com três casas decimais.  */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
