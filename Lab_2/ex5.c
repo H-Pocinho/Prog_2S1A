@@ -1,3 +1,8 @@
+/*  Feito por: Henrique Alves Pocinho
+                    IST199952
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
