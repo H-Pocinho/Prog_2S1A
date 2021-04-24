@@ -18,7 +18,7 @@ void FlagMultipleNumbers(int i, int j , int numbers[]){
 
 void SieveOfEratosthenes(int n){
 int i,j,limit;
-int numbers[1000];
+int numbers[30000];
 
     limit=sqrt(n);
 
